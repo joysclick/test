@@ -1,5 +1,6 @@
 package com.joysclick.test.basic;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 /**
@@ -11,4 +12,12 @@ public class StringTest {
     public void HelloWorld(){
         System.out.println("Hello World!");
     }
+
+    @Test
+    public void TestSplit(){
+        String s = "This is Split Test";
+        String[] ls = s.split(" ");
+        Assert.assertEquals(ls.length, 4, "Verify the string is split to 4 items");
+    }
+
 }
