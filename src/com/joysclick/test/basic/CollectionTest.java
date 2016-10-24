@@ -25,7 +25,7 @@ public class CollectionTest {
     public void HashSetTest(){
         Set<String> words = new HashSet<String>();
         long totalTime = 0;
-        Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);  //debug will be hang at this place
         while(in.hasNext()){
             String word = in.next();
             long callTime = System.currentTimeMillis();
